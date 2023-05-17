@@ -12,6 +12,9 @@
         android:theme="@style/Theme.DepremYardim"
         tools:targetApi="31">
         <activity
+            android:name=".BagisEkrani"
+            android:exported="false" />
+        <activity
             android:name=".YardimEt"
             android:exported="false" />
         <activity
