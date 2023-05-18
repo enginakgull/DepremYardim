@@ -15,6 +15,18 @@
             android:name=".BagisEkrani"
             android:exported="false" />
         <activity
+            android:name=".malzemeYardimi"
+            android:exported="false" />
+        <activity
+            android:name=".saglikHizmetleri"
+            android:exported="false" />
+        <activity
+            android:name=".cadirlarVeKonteynirlar"
+            android:exported="false" />
+        <activity
+            android:name=".yardimAl"
+            android:exported="false" />
+        <activity
             android:name=".YardimEt"
             android:exported="false" />
         <activity
