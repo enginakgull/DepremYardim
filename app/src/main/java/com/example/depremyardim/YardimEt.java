@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Button;
 
 public class YardimEt extends AppCompatActivity {
-
     private Button ilerle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {

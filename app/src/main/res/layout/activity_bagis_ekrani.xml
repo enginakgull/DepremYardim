@@ -6,13 +6,109 @@
     android:layout_height="match_parent"
     tools:context=".BagisEkrani">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="208dp"
-        android:layout_marginEnd="192dp"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:text="Bağışlamak istediğiniz seçeneğe tıklayınız."
+        android:layout_marginTop="10sp"
+        android:textSize="75px"
+        android:textColor="#000000"
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10sp"
+        android:layout_marginBottom="10sp"
+        android:layout_marginTop="85sp"
+        android:padding="10sp"
+        android:rowCount="5"
+        android:columnCount="2"
+        >
+        <Button
+            android:id="@+id/cadir"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:text="Button"
+            />
+        <Button
+            android:id="@+id/kiyafet"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:text="Button"
+            />
+        <Button
+            android:id="@+id/para"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:text="Button"
+            />
+        <Button
+            android:id="@+id/portatifEv"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:text="Button"
+            />
+        <Button
+            android:id="@+id/yemek"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:text="Button"
+            />
+        <Button
+            android:id="@+id/icecek"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:text="Button"
+            />
+        <Button
+            android:id="@+id/isinma"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:text="Button"
+            />
+        <Button
+            android:id="@+id/iletisimAraclari"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:text="Button"
+            />
+        <Button
+            android:id="@+id/deneme2"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:text="Button"
+            />
+        <Button
+            android:id="@+id/deneme3"
+            android:layout_gravity="fill"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:layout_margin="5sp"
+            android:text="Button"
+            />
+
+
+
+    </GridLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
