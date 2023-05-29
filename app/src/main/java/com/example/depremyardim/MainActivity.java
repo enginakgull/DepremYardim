@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity {
     private Button yardimEt;
     private Button yardimAl;
 
+    private Button depremler;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
         yardimEt = (Button) findViewById(R.id.button_yardim_et);
         yardimAl = (Button) findViewById(R.id.button_yardim_al);
+        depremler = (Button) findViewById(R.id.button_yeni_depremler);
 
         yardimAl.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
+        depremler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                depremlerMenu();
+            }
+        });
     }
 
     public void yardimAlMenu(){
@@ -43,6 +53,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void yardimEtMenu() {
         Intent intent = new Intent(this, YardimEt.class);
+        startActivity(intent);
+    }
+
+    public void depremlerMenu() {
+        Intent intent = new Intent(this, Depremler.class);
         startActivity(intent);
     }
 

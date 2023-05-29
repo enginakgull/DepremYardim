@@ -46,4 +46,21 @@
         android:text="Yardım Et"
         android:textColor="#FFFFFF" />
 
+    <Button
+        android:id="@+id/button_yeni_depremler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_yardim_al"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="110dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/custom_button"
+        android:text="En Yeni Depremler"
+        android:textColor="#FFFFFF" />
+
+
+
+
 </RelativeLayout>
