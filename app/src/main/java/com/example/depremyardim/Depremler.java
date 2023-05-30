@@ -3,7 +3,10 @@ package com.example.depremyardim;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DownloadManager;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.android.volley.RequestQueue;
@@ -20,33 +23,25 @@ import org.json.JSONObject;
 import java.net.URI;
 
 public class Depremler extends AppCompatActivity {
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_depremler);
 
-        TextView depremler = (TextView) findViewById(R.id.depremler);
+        Button yeniDepremler = (Button) findViewById(R.id.en_yeni_depremler);
 
-        String URL_24_HOURS = "https://api.hknsoft.com/earthquake/v1/last24hours";
-        String URL_24_HOURS_LIMITED = "https://api.hknsoft.com/earthquake/v1/last24hours?limit=100";
-        String URL_WITH_MAG = "https://api.hknsoft.com/earthquake/v1/last24hours?mag=3.7";
-        String URL_WITH_CITY = "https://api.hknsoft.com/earthquake/v1/last24hours?city=izmir";
-
-        JsonObjectRequest lastTwentyFourHours = new JsonObjectRequest(URL_24_HOURS, null, new Response.Listener<JSONObject>() {
+        yeniDepremler.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onResponse(JSONObject response) {
-                depremler.setText(response.toString());
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                depremler.setText("Deprem verilerine erişim mümkün değil, lütfen internet bağlantınızı kontrol ediniz...");
+            public void onClick(View view) {
+                enYeniDepremler();
             }
         });
-        RequestQueue requestQueue = Volley.newRequestQueue(this);
-        requestQueue.add(lastTwentyFourHours);
+
+
+    }
+
+    public void enYeniDepremler() {
+        Intent intent = new Intent(this, YeniDepremler.class);
+        startActivity(intent);
     }
 }
