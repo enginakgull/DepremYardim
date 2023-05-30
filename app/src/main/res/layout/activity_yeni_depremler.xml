@@ -7,13 +7,28 @@
     tools:context=".YeniDepremler">
 
     <TextView
+        android:id="@+id/deprem_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:text="Son 24 Saatte Gerçekleşen Depremler"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/depremler"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="10dp"
         android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="15sp"
+        android:layout_marginTop="60sp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,6 +14,12 @@
         android:theme="@style/Theme.DepremYardim"
         tools:targetApi="31">
         <activity
+            android:name=".SehreGoreDepremler"
+            android:exported="false" />
+        <activity
+            android:name=".SiddeteGoreDepremler"
+            android:exported="false" />
+        <activity
             android:name=".YeniDepremler"
             android:exported="false" />
         <activity

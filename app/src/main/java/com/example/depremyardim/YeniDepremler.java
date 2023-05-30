@@ -58,7 +58,8 @@ public class YeniDepremler extends AppCompatActivity {
                         String tarih = earthquake.getString("date");
                         String saat = earthquake.getString("time");
                         String sehir = earthquake.getString("city");
-                        depremler.append("Şehir: " + sehir + " Tarih: " + tarih + " Saat: " + saat + "\n");
+                        String siddet = earthquake.getString("mag");
+                        depremler.append("Şehir: " + sehir + " Tarih: " + tarih + " Saat: " + saat + " Şiddet: " + siddet + "\n\n");
                     }
                 } catch (JSONException e) {
                     throw new RuntimeException(e);

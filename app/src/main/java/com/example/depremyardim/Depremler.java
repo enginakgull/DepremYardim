@@ -29,6 +29,8 @@ public class Depremler extends AppCompatActivity {
         setContentView(R.layout.activity_depremler);
 
         Button yeniDepremler = (Button) findViewById(R.id.en_yeni_depremler);
+        Button siddeteGoreDepremler = (Button) findViewById(R.id.siddet_depremler);
+        Button sehreGoreDepremler = (Button) findViewById(R.id.sehir_depremler);
 
         yeniDepremler.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,11 +39,34 @@ public class Depremler extends AppCompatActivity {
             }
         });
 
+        siddeteGoreDepremler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                siddeteGoreDepremler();
+            }
+        });
+
+        sehreGoreDepremler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                sehreGoreDepremler();
+            }
+        });
 
     }
 
     public void enYeniDepremler() {
         Intent intent = new Intent(this, YeniDepremler.class);
+        startActivity(intent);
+    }
+
+    public void siddeteGoreDepremler() {
+        Intent intent = new Intent(this, SiddeteGoreDepremler.class);
+        startActivity(intent);
+    }
+
+    public void sehreGoreDepremler() {
+        Intent intent = new Intent(this, SehreGoreDepremler.class);
         startActivity(intent);
     }
 }
