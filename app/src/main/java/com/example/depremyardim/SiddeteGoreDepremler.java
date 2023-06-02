@@ -28,7 +28,7 @@ public class SiddeteGoreDepremler extends AppCompatActivity {
 
         Button siddetButton = (Button) findViewById(R.id.siddetButton);
 
-        siddetButton.setOnClickListener(new View.OnClickListener() {
+        siddetButton.setOnClickListener(new View.OnClickListener() { // deneme
             @Override
             public void onClick(View view) {
                 EditText siddetEditText = (EditText) findViewById(R.id.siddetEditText);
