@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">DepremYardim</string>
+    <string name="app_name">Deprem Yardım</string>
+
+    <string-array name="city_array">
+        <item>Kahramanmaraş</item>
+        <item>Adana</item>
+        <item>Malatya</item>
+        <item>Diyarbakır</item>
+        <item>Osmaniye</item>
+    </string-array>
+
+
+
 </resources>

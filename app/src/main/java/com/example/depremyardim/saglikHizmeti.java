@@ -4,11 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class cadirlarVeKonteynirlar extends AppCompatActivity {
+public class saglikHizmeti extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cadirlar_ve_konteynirlar);
+        setContentView(R.layout.activity_saglik_hizmeti);
+
+
+
     }
 }
