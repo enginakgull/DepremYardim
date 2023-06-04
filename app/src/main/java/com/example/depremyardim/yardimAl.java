@@ -12,7 +12,6 @@ public class yardimAl extends AppCompatActivity {
     private Button cadirVeKonteynir;
     private Button saglikHizmeti;
     private Button malzemeYardimi;
-    private Button geri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,15 +19,7 @@ public class yardimAl extends AppCompatActivity {
         setContentView(R.layout.activity_yardim_al);
         cadirVeKonteynir = findViewById(R.id.btn_cadir_ve_konteynir);
         saglikHizmeti = findViewById(R.id.btn_saglik_hizmeti);
-        malzemeYardimi = findViewById(R.id.btn_mazleme_yardimi);
-        geri = findViewById(R.id.btn_back);
-
-        geri.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
+        malzemeYardimi = findViewById(R.id.btn_giyecek_ve_yiyecek_yardimi);
 
         cadirVeKonteynir.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -56,17 +47,17 @@ public class yardimAl extends AppCompatActivity {
     }
     private void openCadirBarinak() {
 
-        Intent intent = new Intent(yardimAl.this, cadirlarVeKonteynirlar.class);
+        Intent intent = new Intent(yardimAl.this, CadirVeKonteynirActivity.class);
         startActivity(intent);
     }
 
     private void openSaglikHizmeti() {
-        Intent intent = new Intent(yardimAl.this, saglikHizmetleri.class);
+        Intent intent = new Intent(yardimAl.this, saglikHizmeti.class);
         startActivity(intent);
     }
 
     private void openMalzemeYardimi() {
-        Intent intent = new Intent(yardimAl.this, malzemeYardimi.class);
+        Intent intent = new Intent(yardimAl.this, YiyecekVeGiyecekActivity.class);
         startActivity(intent);
     }
 }
