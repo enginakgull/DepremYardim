@@ -32,24 +32,25 @@
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:layout_margin="5sp"
-            android:text="Çadırlar ve Barınaklar"
+            android:text="Çadır"
             />
         <Button
-            android:id="@+id/kiyafet"
+            android:id="@+id/cocukKiyafet"
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:layout_margin="5sp"
-            android:text="Sağlık Hizmeti"
+            android:text="Çocuk-Bebek Kıyafeti"
             />
         <Button
-            android:id="@+id/deneme2"
+            android:id="@+id/yetiskinKiyafet"
             android:layout_gravity="fill"
             android:layout_columnWeight="1"
             android:layout_rowWeight="1"
             android:layout_margin="5sp"
-            android:text="Malzeme Yardımı"
+            android:text="Yetişkin Kıyafeti"
             />
+
 
 
 
