@@ -1,12 +1,31 @@
 <resources>
     <string name="app_name">Deprem Yardım</string>
 
-    <string-array name="city_array">
-        <item>Kahramanmaraş</item>
-        <item>Adana</item>
-        <item>Malatya</item>
-        <item>Diyarbakır</item>
-        <item>Osmaniye</item>
+    <string-array name="il_liste">
+        <item>Ankara</item>
+        <item>İstanbul</item>
+        <item>İzmir</item>
+    </string-array>
+
+    <string-array name="ilce_listesi_ankara">
+        <item>Çankaya</item>
+        <item>Keçiören</item>
+        <item>Mamak</item>
+        <!-- Diğer ilçeler -->
+    </string-array>
+
+    <string-array name="ilce_listesi_istanbul">
+        <item>Beşiktaş</item>
+        <item>Kadıköy</item>
+        <item>Şişli</item>
+        <!-- Diğer ilçeler -->
+    </string-array>
+
+    <string-array name="ilce_listesi_izmir">
+        <item>Konak</item>
+        <item>Buca</item>
+        <item>Karşıyaka</item>
+        <!-- Diğer ilçeler -->
     </string-array>
 
 

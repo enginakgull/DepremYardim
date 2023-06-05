@@ -29,7 +29,7 @@ public class CadirVeKonteynirActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String il = sehir.getText().toString();
-                String snc = il + "'in Erzin ilçesinde çadır dağıtılmaktadır.";
+                String snc = il + "'ın Çankaya ilçesinde çadır dağıtılmaktadır.";
                 sonuc.setText(snc);
             }
         });

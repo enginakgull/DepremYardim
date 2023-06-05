@@ -5,16 +5,16 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:gravity="center"
     android:background="@drawable/yiyecekvegiyecek"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:text="Yiyecek ve İçecek Yardımı"
         android:textSize="30dp"
         android:textColor="#f17"
-        android:gravity="center_horizontal"
         android:layout_margin="10dp"/>
 
     <LinearLayout
@@ -29,8 +29,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Şehir Seçin"
-
-            android:textSize="30dp" />
+            android:layout_gravity="start"
+            android:layout_margin="5dp"
+            android:textSize="25dp" />
 
         <Spinner
             android:id="@+id/citySpinner"
@@ -38,12 +39,25 @@
             android:layout_height="50dp"
             android:layout_margin="10sp" />
 
+        <TextView
+            android:id="@+id/districtTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İlçe Seçin"
+            android:layout_margin="5dp"
+            android:layout_gravity="start"
+            android:textSize="25dp"/>
+        <Spinner
+            android:id="@+id/districtSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
         <Button
             android:id="@+id/showButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="showCampLocation"
-            android:text="Göster" />
+            android:text="Ara" />
 
         <TextView
             android:id="@+id/campLocationTextView"

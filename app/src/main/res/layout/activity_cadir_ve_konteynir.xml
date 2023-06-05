@@ -16,23 +16,23 @@
         android:text="Çadır ve Konteynır"
         android:textSize="25dp"
         android:textStyle="bold"
+        android:textColor="#f17"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="16dp"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/sehirTextView"
+    <Button
+        android:id="@+id/goruntule"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Görüntülemek İstediğiniz Şehir"
-        android:textColor="#CA1A1A"
-        android:textSize="20dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/sehirEditText"
-        app:layout_constraintStart_toStartOf="@+id/sehirEditText" />
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="3dp"
+        android:text="Ara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sehirEditText"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/sehirEditText"
@@ -47,23 +47,24 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/goruntule"
+    <TextView
+        android:id="@+id/sehirTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="3dp"
-        android:text="Görüntüle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/sehirEditText"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="16dp"
+        android:text="Nerede Dağıtılıyor"
+        android:textColor="#CA1A1A"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sehirEditText"
+        app:layout_constraintStart_toStartOf="@+id/sehirEditText" />
 
     <TextView
         android:id="@+id/sehirler"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="244dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="328dp"
         android:text=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

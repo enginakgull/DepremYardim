@@ -22,12 +22,24 @@
         tools:layout_editor_absoluteX="107dp"
         tools:layout_editor_absoluteY="16dp" />
 
+    <Button
+        android:id="@+id/goruntule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="3dp"
+        android:text="Ara"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sehirEditText"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/sehirTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:text="Hastane"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="Hastane Ara"
         android:textColor="#CA1A1A"
         android:textSize="20dp"
         android:textStyle="bold"
@@ -47,31 +59,15 @@
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/goruntule"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="148dp"
-        android:layout_marginEnd="3dp"
-        android:text="Görüntüle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/sehirEditText"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/sehirler"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="244dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="364dp"
         android:text=""
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

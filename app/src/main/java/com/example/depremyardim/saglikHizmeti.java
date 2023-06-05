@@ -13,9 +13,9 @@ import android.widget.Toast;
 
 public class saglikHizmeti extends AppCompatActivity {
 
-    private Button goster;
-    private EditText sehir;
-    private TextView sonuc;
+    private Button showBtn;
+    private EditText city;
+    private TextView result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,28 +24,17 @@ public class saglikHizmeti extends AppCompatActivity {
 
 
 
-        sehir = findViewById(R.id.sehirEditText);
-        goster = findViewById(R.id.goruntule);
-        sonuc = findViewById(R.id.sehirler);
+        city = findViewById(R.id.sehirEditText);
+        showBtn = findViewById(R.id.goruntule);
+        result = findViewById(R.id.sehirler);
 
-        goster.setOnClickListener(new View.OnClickListener() {
+        showBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String il = sehir.getText().toString();
-                String location = "https://www.google.com/maps/search/?api=1&query="+ il;
-                Uri gmmIntentUri = Uri.parse(location);
-                Intent mapIntent = new Intent(Intent.ACTION_VIEW,gmmIntentUri);
-
-                if (mapIntent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(mapIntent);
-                } else {
-                    // Harita uygulaması bulunamadığı için bir hata mesajı gösterebilirsiniz
-                    Toast.makeText(saglikHizmeti.this, "Harita uygulaması bulunamadı. Tarayıcıda açılıyor...", Toast.LENGTH_SHORT).show();
-                    Intent webIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-                    startActivity(webIntent);
-                }
+                String il = city.getText().toString();
+                String snc = "En yakın hastane "+il + "'ın Erzin ilçesindedir.";
+                result.setText(snc);
             }
         });
-
     }
 }
